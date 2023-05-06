@@ -10,11 +10,22 @@ import {
 
 /* import specific icons */
 import {
-    faUserSecret
+    faFacebook,
+    faGoogle,
+    faTwitter
+} from '../../../node_modules/@fortawesome/free-brands-svg-icons'
+
+import {
+    faBars,
+    faCopyright
 } from '../../../node_modules/@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret)
+library.add(faBars)
+library.add(faCopyright)
+library.add(faFacebook)
+library.add(faGoogle)
+library.add(faTwitter)
 
 export default function registerFortAwesome(app) {
     app.component('font-awesome-icon', FontAwesomeIcon)
