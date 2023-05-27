@@ -1,11 +1,11 @@
 {
-    "compilerOptions": {
-    "baseUrl": "./src",
-      "paths": {
-        "$libs": ["src/libs"],
-        "$libs/*": ["src/libs/*"]
-      }
-    },
-    "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte", "src/**/*.vue"],
-    "exclude": ["node_modules", "**/node_modules", "dist"]
-  }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
