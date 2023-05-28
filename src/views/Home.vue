@@ -6,11 +6,9 @@
   <!-- START CONTENT -->
   <div class="sm:container mx-auto">
     <div
-      class="max-w-screen-lg mx-auto grid lg:grid-cols-2 sm:mt-40 sm:grid-cols-1 gap-4"
-      v-for="i in 4"
-      :key="i"
+      class="max-w-screen-lg mx-auto grid sm:mt-20 sp:grid-cols-1 sp:gap-4 md:grid-cols-2 md:gap-2"
     >
-      <Post />
+      <Post :data-post="i" v-for="i in 4" :key="i" />
     </div>
   </div>
   <!-- END CONTENT -->
